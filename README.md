@@ -17,10 +17,30 @@ To set up the development environment for this website, you'll need to install t
 
 See [Roots/Bedrock] (https://github.com/roots/bedrock) for detailed instructions on setting up a project.
 
-After installing Roots Theme Framework run [HTML 5 Boilerplate .htaccess] (https://github.com/roots/wp-h5bp-htaccess) 
+## After installation
+
+Git clone [Roots Theme Framework] (http://roots.io) into ~/web/wp/wp-content/themes/theme-name
+
+```
+git clone git@github.com:roots/roots.git ~/web/wp/wp-content/themes/theme-name
+```
+ 
+Run [HTML 5 Boilerplate .htaccess] (https://github.com/roots/wp-h5bp-htaccess) 
 
 ```
 composer require roots/wp-h5bp-htaccess 1.1.0
+```
+
+Install NPM into theme folder
+
+```
+npm install
+```
+
+Run grunt to compile LESS to CSS, concatenate and validate JS.
+
+```
+grunt dev
 ```
 
 ## Not included
