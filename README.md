@@ -17,6 +17,12 @@ To set up the development environment for this website, you'll need to install t
 
 See [Roots/Bedrock] (https://github.com/roots/bedrock) for detailed instructions on setting up a project.
 
+After installing Roots Theme Framework run [HTML 5 Boilerplate .htaccess] (https://github.com/roots/wp-h5bp-htaccess) 
+
+```
+composer require roots/wp-h5bp-htaccess 1.1.0
+```
+
 ## Not included
 
 Wordpress files and vendor files are not contained in this repository, they are managed separately via Composer in each environment.
