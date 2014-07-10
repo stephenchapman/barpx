@@ -9,7 +9,6 @@ To set up the development environment for this website, you'll need to install t
 * NPM
 * Composer – Used to manage dependencies, including wordpress and all plugins.
 * Capistrano – For automated deployments with a single line command.
-* Bower
 * Grunt
 * Git
 * PHP >= 5.3.2 (for Composer)
@@ -31,7 +30,7 @@ Run [HTML 5 Boilerplate .htaccess] (https://github.com/roots/wp-h5bp-htaccess)
 composer require roots/wp-h5bp-htaccess 1.1.0
 ```
 
-Install NPM into theme folder
+Install NPM into theme folder. This will also install Bower (Roots uses Bower for managing Bootstrap, jQuery, Modernizr, and Respond.js.)
 
 ```
 npm install
@@ -43,6 +42,12 @@ Run grunt to compile LESS to CSS, concatenate and validate JS.
 grunt dev
 ```
 
+
 ## Not included
 
 Wordpress files and vendor files are not contained in this repository, they are managed separately via Composer in each environment.
+
+
+## Installing Plugins
+
+All Wordpress plugins are treated as dependencies and are managed by Composer. See [wpackagist.org] for more information on discovering and installing plugins with Composer.
