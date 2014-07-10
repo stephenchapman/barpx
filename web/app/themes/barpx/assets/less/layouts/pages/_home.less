@@ -1,0 +1,78 @@
+#frame {
+	border: 8px #efefef double;
+}
+
+header.decoration {
+
+	img.cnr-right {
+		float: right;
+		margin-top: 1rem;
+		margin-right: 1rem;
+		width: 12rem;
+	}
+
+	img.cnr-left {
+		-moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+        float: left;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        width: 12rem;
+	}
+}
+
+section.intro {
+  	.make-row();
+
+	article {
+
+		p {
+			.text-center;
+			.lead;
+			span.glyphicon {
+				color: #428bca;
+			}
+		}
+	}
+}
+
+ul.menu {
+
+	.make-row();
+
+	padding-top:48px;
+	padding-bottom:48px;
+	margin-top: 30px;
+	margin-bottom:30px;
+
+	li {
+		.make-sm-column(4);
+		.text-center;
+		list-style: none;
+		
+		a {
+			
+			button { 
+				margin-top: 3rem;
+				border-bottom: 4px #333 solid;
+				border-top:0;
+				border-right:0;
+				border-left: 0;
+				font-weight: bold;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				color: #000;
+				background: #efefef;
+			}
+		}
+	}
+}
+
+section.posts {
+	.make-row();
+
+}
