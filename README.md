@@ -2,19 +2,23 @@
 
 Bar PX is a speakeasy style bar in Alexandria, VA. This website is constructed using the Roots/Bedrock Wordpress stack, and is deployed using Capistrano. The production environment is a LAMP equiped Dreamhost VPS.
 
-## Installation
+## Installation requirements
 
 To set up the development environment for this website, you'll need to install the following on your system:
 
-* NPM
-* Composer – Used to manage dependencies, including wordpress and all plugins.
-* Capistrano – For automated deployments with a single line command.
-* Grunt
-* Git
-* PHP >= 5.3.2 (for Composer)
-* Ruby >= 1.9 (for Capistrano)
+* Node.js/NPM/Grunt – To compile LESS to CSS, concatenate and validate JS, and to create minified assets that are used on non-development environments.
+* Composer – To manage dependencies, including wordpress and all plugins.
+* Capistrano – For automated deployments with a single line command and full version control with easy rollback capabilities.
+* Git - Version control of all web app source code.
+* PHP >= 5.3.2 (for Composer).
+* Ruby >= 1.9 (for Capistrano).
+* Apache - Server.
+* MySQL - Database.
+
+## Installation
 
 See [Roots/Bedrock] (https://github.com/roots/bedrock) for detailed instructions on setting up a project.
+
 
 ## After installation
 
