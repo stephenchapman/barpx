@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "61ecc2e12124d76414f04f564ddf6ed2",
+    "hash": "625cddafafa39f7eef7432276570540a",
     "packages": [
         {
             "name": "composer/installers",
@@ -89,6 +89,48 @@
                 "zikula"
             ],
             "time": "2014-02-24 04:21:34"
+        },
+        {
+            "name": "egfg/media-links",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eatgoodfood/media-links.git",
+                "reference": "42288b731b9aaa32fdae88d8ee26e8f388cbd8ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eatgoodfood/media-links/zipball/42288b731b9aaa32fdae88d8ee26e8f388cbd8ab",
+                "reference": "42288b731b9aaa32fdae88d8ee26e8f388cbd8ab",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "v1.0.12",
+                "php": ">=5.3.2"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stephen Chapman",
+                    "email": "stephen@restauranteve.com",
+                    "homepage": "http://www.stephen-chapman.com"
+                }
+            ],
+            "description": "WordPress Plugin to add custom post type for media links",
+            "homepage": "http://eatgoodfoodgroup.com",
+            "keywords": [
+                "egfg",
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/eatgoodfood/media-links/tree/master",
+                "issues": "https://github.com/eatgoodfood/media-links/issues"
+            },
+            "time": "2014-07-18 22:01:49"
         },
         {
             "name": "fancyguy/webroot-installer",
@@ -290,9 +332,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "egfg/media-links": 20
+    },
     "platform": {
         "php": ">=5.3.2"
     },

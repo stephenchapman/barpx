@@ -52,6 +52,10 @@
           "fancyguy/webroot-installer": "1.1.0"
         }
       }
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/eatgoodfood/media-links"
     }
   ],
   "require": {
@@ -62,7 +66,8 @@
     "vlucas/phpdotenv": "~1.0.6",
     "roots/wp-h5bp-htaccess": "1.1.0",
     "wpackagist-plugin/advanced-custom-fields": "4.3.7",
-    "wpackagist-plugin/restricted-site-access": "5.0.1"
+    "wpackagist-plugin/restricted-site-access": "5.0.1",
+    "egfg/media-links": "dev-master"
   },
   "extra": {
     "installer-paths": {
