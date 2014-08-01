@@ -4,15 +4,16 @@
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/deco-right-cnr-white.svg" alt="" class="cnr-left">
 	</header>
 
-	<div class="jumbotron">
+	<!--<div class="jumbotron">
 	  <div class="container">
 	  	<div class="text-center">
-	    	<img src="<?php echo get_template_directory_uri(); ?>/assets/img/PX-logo-white.png" alt="" class="px-logo">
+	    	
 	    </div>
 	  </div>
-	</div>
+	</div>-->
 
 	<section class="intro" id="intro">
+		<h1 class="px-logo" style="font-size: 15rem; font-weight: bold;">PX</h1>
 		<article>
 			<?php while (have_posts()) : the_post(); ?>
 					<?php get_template_part('templates/content', 'page'); ?>
@@ -22,13 +23,13 @@
 
 	<ul class="menu" id="menu">
 		<li class="menu-1">
-			<a href=""><button type="button" class="btn btn-default btn-lg">About</button></a>
+			<a href="/about"><button type="button" class="btn btn-default btn-lg">About</button></a>
 		</li>
 		<li class="menu-2">
-			<a href=""><button type="button" class="btn btn-default btn-lg">Reservations</button></a>
+			<a href="/reservations"><button type="button" class="btn btn-default btn-lg">Reservations</button></a>
 		</li>
 		<li class="menu-3">
-			<a href=""><button type="button" class="btn btn-default btn-lg">Soirées</button></a>
+			<a href="/soirees"><button type="button" class="btn btn-default btn-lg">Soirées</button></a>
 		</li>
 	</ul>
 

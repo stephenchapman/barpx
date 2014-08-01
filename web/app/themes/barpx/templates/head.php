@@ -9,4 +9,5 @@
   <?php wp_head(); ?>
 
   <link rel="alternate" type="application/rss+xml" title="<?php echo get_bloginfo('name'); ?> Feed" href="<?php echo esc_url(get_feed_link()); ?>">
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,900' rel='stylesheet' type='text/css'>
 </head>

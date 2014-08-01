@@ -70,6 +70,14 @@ module.exports = function(grunt) {
         dest: 'assets/js/scripts.js',
       },
     },
+    copy: {
+      font_awesome: {
+        expand: true,
+        flatten: true,
+        src: ['assets/vendor/fontawesome/fonts/*'],
+        dest: 'assets/fonts/'
+        }
+    },
     uglify: {
       dist: {
         files: {
@@ -160,7 +168,8 @@ module.exports = function(grunt) {
     'jshint',
     'less:dev',
     'autoprefixer:dev',
-    'concat'
+    'concat',
+    'copy'
   ]);
   grunt.registerTask('build', [
     'jshint',

@@ -17,7 +17,7 @@
             wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav'));
           endif;
         ?>
-        <button class="btn btn-primary navbar-btn navbar-right" type="button">Make a reservation</button>
+        <button class="btn btn-primary navbar-btn navbar-right" type="button">Make A Reservation</button>
       </div>
     </div>
   </nav>

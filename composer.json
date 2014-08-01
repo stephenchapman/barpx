@@ -56,6 +56,10 @@
     {
       "type": "vcs",
       "url": "https://github.com/eatgoodfood/media-links"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/eatgoodfood/people-dir"
     }
   ],
   "require": {
@@ -67,7 +71,8 @@
     "roots/wp-h5bp-htaccess": "1.1.0",
     "wpackagist-plugin/advanced-custom-fields": "4.3.7",
     "wpackagist-plugin/restricted-site-access": "5.0.1",
-    "egfg/media-links": "dev-master"
+    "egfg/media-links": "dev-master",
+    "egfg/people-dir": "dev-master"
   },
   "extra": {
     "installer-paths": {

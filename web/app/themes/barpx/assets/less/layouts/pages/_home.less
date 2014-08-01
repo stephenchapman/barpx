@@ -1,5 +1,5 @@
 #frame {
-	border: 8px #efefef double;
+	border: 8px @gray double;
 }
 
 header.decoration {
@@ -28,14 +28,32 @@ header.decoration {
 section.intro {
   	.make-row();
 
+  	h1 {
+  		.text-center;
+  	}
+
 	article {
 
-		p {
+		address:before {
+			color: #428bca;
+			font-family: FontAwesome;
+			content: '\f0eb';
+			font-size: 3.5rem;
+			display:block;
+		}
+
+		h2, address {
 			.text-center;
-			.lead;
-			span.glyphicon {
-				color: #428bca;
-			}
+		}
+
+		h2 {
+			font-family: "Goudy", @font-family-serif;
+		}
+
+		address {
+			margin-top: 8rem;
+			color: @gray;
+			font-size: 2rem;
 		}
 	}
 }
@@ -48,11 +66,11 @@ ul.menu {
 	padding-bottom:48px;
 	margin-top: 30px;
 	margin-bottom:30px;
+	.list-unstyled;
 
 	li {
 		.make-sm-column(4);
 		.text-center;
-		list-style: none;
 		
 		a {
 			
@@ -65,8 +83,7 @@ ul.menu {
 				font-weight: bold;
 				text-transform: uppercase;
 				letter-spacing: 1px;
-				color: #000;
-				background: #efefef;
+				background-color: #efefef;
 			}
 		}
 	}

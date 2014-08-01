@@ -1,4 +1,4 @@
-.content-info { 
+footer { 
 	border-top: solid 1px #000;
 	padding-top: 5rem;
 	padding-bottom: 5rem;
@@ -6,4 +6,22 @@
 	margin-top: 5rem;
 	margin-bottom: 0px; //reset
 	color: @gray;
+
+  	section {
+		.make-md-column(4);
+		.text-center;
+
+		h3 {
+			color: @gray;
+		}
+
+		ul {
+			.list-unstyled;
+		
+			li a {
+				color: @gray;
+				text-decoration: underline;
+			}
+		}
+	}
 }
