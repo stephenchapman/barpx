@@ -14,21 +14,7 @@ Bar PX is a speakeasy style bar in Alexandria, VA. This website is constructed u
 | /web/app | |
 | /web/app/mu-plugins |  |
 | /web/app/plugins |  |
-| /web/app/themes |  |
-| /web/app/themes/barpx |  |
-| /web/app/themes/barpx/assets |  |
-| /web/app/themes/barpx/assets/css |  |
-| /web/app/themes/barpx/assets/fonts |  |
-| /web/app/themes/barpx/assets/img |  |
-| /web/app/themes/barpx/assets/js |  |
-| /web/app/themes/barpx/assets/js/plugins |  |
-| /web/app/themes/barpx/assets/less |  |
-| /web/app/themes/barpx/assets/less/components |  |
-| /web/app/themes/barpx/assets/less/layouts |  |
-| /web/app/themes/barpx/assets/less/layouts/pages |  |
-| /web/app/themes/barpx/lang |  |
-| /web/app/themes/barpx/lib |  |
-| /web/app/themes/barpx/templates |  |
+| /web/app/themes |  Contains the barpx theme folder. |
 | /web/app/uploads |  |
 
 
@@ -69,17 +55,36 @@ Install NPM into theme folder. This will also install Bower (Roots uses Bower fo
 ```
 npm install
 ```
+```
+bower install
+```
+```
+composer install
+```
 
 Run grunt to compile LESS to CSS, concatenate and validate JS.
 
 ```
 grunt dev
+``` 
+
+## Deployment Process
+
+From the project folder on a local machine 
+
+```
+bundle exec cap staging deploy
 ```
 
+```
+bundle exec cap production deploy
+```
 
-## Not included
+## Not Included
 
 Wordpress files and vendor files are not contained in this repository, they are managed separately via Composer in each environment.
+
+None of `composer install`, `bower install`, `npm install`, `grunt` commands are currently run automatically during a Capistrano deployment. New gems would need to be added to the project Gemfile.
 
 
 ## Installing Plugins
